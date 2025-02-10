@@ -11,4 +11,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Oauth
+  namespace :auth do
+    namespace :google_oauth2 do
+      get "callback"
+    end
+  end
 end
