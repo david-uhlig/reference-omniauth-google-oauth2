@@ -1,0 +1,4 @@
+<%= form_tag('/auth/google_oauth2', method: :post, data: { turbo: false }) do %>
+  <%= hidden_field_tag :origin, auth_google_oauth2_callback_path %>
+  <button type="submit">Sign in with Google</button>
+<% end %>
